@@ -1,4 +1,4 @@
-package com.malpvaplicaciones.code_cleanarquitecture.network.response
+package com.malpvaplicaciones.code_cleanarquitecture.data.network.response
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName

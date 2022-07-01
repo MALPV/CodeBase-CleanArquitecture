@@ -2,8 +2,8 @@ package com.malpvaplicaciones.code_cleanarquitecture.di
 
 import android.content.Context
 import androidx.room.Room
-import com.malpvaplicaciones.code_cleanarquitecture.database.dao.CharacterDao
-import com.malpvaplicaciones.code_cleanarquitecture.database.db.AppDatabase
+import com.malpvaplicaciones.code_cleanarquitecture.data.database.dao.CharacterDao
+import com.malpvaplicaciones.code_cleanarquitecture.data.database.db.AppDatabase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

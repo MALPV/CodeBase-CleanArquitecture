@@ -1,4 +1,4 @@
-package com.malpvaplicaciones.code_cleanarquitecture.database.entity
+package com.malpvaplicaciones.code_cleanarquitecture.data.database.entity
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

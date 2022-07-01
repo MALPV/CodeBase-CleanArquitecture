@@ -2,7 +2,7 @@ package com.malpvaplicaciones.code_cleanarquitecture.di
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
-import com.malpvaplicaciones.code_cleanarquitecture.network.service.CharacterService
+import com.malpvaplicaciones.code_cleanarquitecture.data.network.service.CharacterService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

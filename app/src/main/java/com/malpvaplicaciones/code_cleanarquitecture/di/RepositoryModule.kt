@@ -1,9 +1,9 @@
 package com.malpvaplicaciones.code_cleanarquitecture.di
 
-import com.malpvaplicaciones.code_cleanarquitecture.database.dao.CharacterDao
-import com.malpvaplicaciones.code_cleanarquitecture.database.mapper.CharacterDatabaseMapper
-import com.malpvaplicaciones.code_cleanarquitecture.network.mapper.CharacterNetworkMapper
-import com.malpvaplicaciones.code_cleanarquitecture.network.service.CharacterService
+import com.malpvaplicaciones.code_cleanarquitecture.data.database.dao.CharacterDao
+import com.malpvaplicaciones.code_cleanarquitecture.data.database.mapper.CharacterDatabaseMapper
+import com.malpvaplicaciones.code_cleanarquitecture.data.network.mapper.CharacterNetworkMapper
+import com.malpvaplicaciones.code_cleanarquitecture.data.network.service.CharacterService
 import com.malpvaplicaciones.code_cleanarquitecture.repository.MainRepository
 import dagger.Module
 import dagger.Provides

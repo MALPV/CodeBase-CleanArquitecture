@@ -1,9 +1,9 @@
-package com.malpvaplicaciones.code_cleanarquitecture.database.db
+package com.malpvaplicaciones.code_cleanarquitecture.data.database.db
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import com.malpvaplicaciones.code_cleanarquitecture.database.dao.CharacterDao
-import com.malpvaplicaciones.code_cleanarquitecture.database.entity.CharacterDatabaseEntity
+import com.malpvaplicaciones.code_cleanarquitecture.data.database.dao.CharacterDao
+import com.malpvaplicaciones.code_cleanarquitecture.data.database.entity.CharacterDatabaseEntity
 
 @Database(
     entities = [CharacterDatabaseEntity::class],

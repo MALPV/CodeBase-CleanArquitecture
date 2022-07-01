@@ -1,7 +1,7 @@
-package com.malpvaplicaciones.code_cleanarquitecture.database.mapper
+package com.malpvaplicaciones.code_cleanarquitecture.data.database.mapper
 
 import com.malpvaplicaciones.code_cleanarquitecture.core.util.EntityMapper
-import com.malpvaplicaciones.code_cleanarquitecture.database.entity.CharacterDatabaseEntity
+import com.malpvaplicaciones.code_cleanarquitecture.data.database.entity.CharacterDatabaseEntity
 import com.malpvaplicaciones.code_cleanarquitecture.domain.Character
 import javax.inject.Inject
 

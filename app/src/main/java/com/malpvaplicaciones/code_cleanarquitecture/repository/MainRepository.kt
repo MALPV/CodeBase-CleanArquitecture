@@ -1,15 +1,14 @@
 package com.malpvaplicaciones.code_cleanarquitecture.repository
 
 import com.malpvaplicaciones.code_cleanarquitecture.core.util.ResultState
-import com.malpvaplicaciones.code_cleanarquitecture.database.dao.CharacterDao
-import com.malpvaplicaciones.code_cleanarquitecture.database.mapper.CharacterDatabaseMapper
+import com.malpvaplicaciones.code_cleanarquitecture.data.database.dao.CharacterDao
+import com.malpvaplicaciones.code_cleanarquitecture.data.database.mapper.CharacterDatabaseMapper
 import com.malpvaplicaciones.code_cleanarquitecture.domain.Character
-import com.malpvaplicaciones.code_cleanarquitecture.network.mapper.CharacterNetworkMapper
-import com.malpvaplicaciones.code_cleanarquitecture.network.service.CharacterService
+import com.malpvaplicaciones.code_cleanarquitecture.data.network.mapper.CharacterNetworkMapper
+import com.malpvaplicaciones.code_cleanarquitecture.data.network.service.CharacterService
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.*
-import java.io.IOException
 import java.net.SocketTimeoutException
 import java.net.UnknownHostException
 
