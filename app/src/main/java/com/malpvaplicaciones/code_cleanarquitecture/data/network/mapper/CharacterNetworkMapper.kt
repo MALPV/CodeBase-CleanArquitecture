@@ -1,7 +1,7 @@
 package com.malpvaplicaciones.code_cleanarquitecture.data.network.mapper
 
 import com.malpvaplicaciones.code_cleanarquitecture.core.util.EntityMapper
-import com.malpvaplicaciones.code_cleanarquitecture.domain.Character
+import com.malpvaplicaciones.code_cleanarquitecture.domain.model.Character
 import com.malpvaplicaciones.code_cleanarquitecture.data.network.response.CharacterNetworkEntity
 import javax.inject.Inject
 

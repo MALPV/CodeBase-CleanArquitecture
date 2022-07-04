@@ -5,15 +5,13 @@ import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.malpvaplicaciones.code_cleanarquitecture.core.util.ResultState
-import com.malpvaplicaciones.code_cleanarquitecture.domain.Character
-import com.malpvaplicaciones.code_cleanarquitecture.repository.MainRepository
+import com.malpvaplicaciones.code_cleanarquitecture.domain.model.Character
+import com.malpvaplicaciones.code_cleanarquitecture.domain.repository.MainRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
-import javax.inject.Inject
-import javax.xml.transform.Result
 
 class MainVM
 @ViewModelInject

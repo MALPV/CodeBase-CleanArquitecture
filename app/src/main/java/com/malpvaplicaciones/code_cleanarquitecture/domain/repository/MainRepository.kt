@@ -1,9 +1,9 @@
-package com.malpvaplicaciones.code_cleanarquitecture.repository
+package com.malpvaplicaciones.code_cleanarquitecture.domain.repository
 
 import com.malpvaplicaciones.code_cleanarquitecture.core.util.ResultState
 import com.malpvaplicaciones.code_cleanarquitecture.data.database.dao.CharacterDao
 import com.malpvaplicaciones.code_cleanarquitecture.data.database.mapper.CharacterDatabaseMapper
-import com.malpvaplicaciones.code_cleanarquitecture.domain.Character
+import com.malpvaplicaciones.code_cleanarquitecture.domain.model.Character
 import com.malpvaplicaciones.code_cleanarquitecture.data.network.mapper.CharacterNetworkMapper
 import com.malpvaplicaciones.code_cleanarquitecture.data.network.service.CharacterService
 import kotlinx.coroutines.Dispatchers

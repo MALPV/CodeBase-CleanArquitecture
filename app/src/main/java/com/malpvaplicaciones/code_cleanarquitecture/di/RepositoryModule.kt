@@ -4,7 +4,7 @@ import com.malpvaplicaciones.code_cleanarquitecture.data.database.dao.CharacterD
 import com.malpvaplicaciones.code_cleanarquitecture.data.database.mapper.CharacterDatabaseMapper
 import com.malpvaplicaciones.code_cleanarquitecture.data.network.mapper.CharacterNetworkMapper
 import com.malpvaplicaciones.code_cleanarquitecture.data.network.service.CharacterService
-import com.malpvaplicaciones.code_cleanarquitecture.repository.MainRepository
+import com.malpvaplicaciones.code_cleanarquitecture.domain.repository.MainRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

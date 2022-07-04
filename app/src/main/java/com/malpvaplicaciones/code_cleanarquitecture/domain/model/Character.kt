@@ -1,4 +1,4 @@
-package com.malpvaplicaciones.code_cleanarquitecture.domain
+package com.malpvaplicaciones.code_cleanarquitecture.domain.model
 
 data class Character(
     var id: Int,
