@@ -66,6 +66,9 @@ dependencies {
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
     implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
 
+    def okhttp_version = '4.9.3'
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
+
     def hilt_version = "2.28-alpha"
     implementation "com.google.dagger:hilt-android:$hilt_version"
     kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
