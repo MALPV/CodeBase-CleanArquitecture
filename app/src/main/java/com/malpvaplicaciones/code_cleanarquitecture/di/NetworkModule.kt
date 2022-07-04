@@ -7,13 +7,35 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ApplicationComponent
+import okhttp3.OkHttpClient
+import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
 
 @Module
 @InstallIn(ApplicationComponent::class)
 object NetworkModule {
+
+    @Singleton
+    @Provides
+    fun provideHttpLoggingInterceptor(): HttpLoggingInterceptor{
+        return HttpLoggingInterceptor()
+            .setLevel(HttpLoggingInterceptor.Level.BODY)
+    }
+
+    @Singleton
+    @Provides
+    fun provideOkHttpClient(interceptor: HttpLoggingInterceptor): OkHttpClient{
+        return OkHttpClient()
+            .newBuilder()
+            .connectTimeout(30, TimeUnit.SECONDS)
+            .readTimeout(30, TimeUnit.SECONDS)
+            .writeTimeout(30, TimeUnit.SECONDS)
+            .addInterceptor(interceptor)
+            .build()
+    }
 
     @Singleton
     @Provides
@@ -25,11 +47,12 @@ object NetworkModule {
 
     @Singleton
     @Provides
-    fun provideRetrofitBuilder(gson: Gson): Retrofit.Builder{
+    fun provideRetrofitBuilder(okHttpClient: OkHttpClient, gson: Gson): Retrofit.Builder{
         return Retrofit
             .Builder()
             .baseUrl("https://rickandmortyapi.com/api/")
             .addConverterFactory(GsonConverterFactory.create(gson))
+            .client(okHttpClient)
     }
 
     @Singleton
